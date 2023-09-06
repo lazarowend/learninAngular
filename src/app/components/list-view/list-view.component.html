@@ -1,0 +1,7 @@
+<hr />
+<h1>Aqui estão os produtos</h1>
+<p *ngFor="let animal of animais">
+  Nome: {{ animal.name }} - Tipo: {{ animal.type }}
+  <button type="button" (click)="showAge(animal)">Show Age</button>
+</p>
+<p>{{ animalDetails }}</p>
